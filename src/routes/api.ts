@@ -10,6 +10,6 @@ router.get('/nome/:nome', ApiController.nome);
 
 router.post('/frases', ApiController.createPhrase);
 router.get('/frases', ApiController.listPhrases);
-router.delete('/frases', );
+router.get('/frases/:id', ApiController.getPhrase);
 
 export default router;
