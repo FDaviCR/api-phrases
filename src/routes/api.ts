@@ -14,4 +14,6 @@ router.get('/frases/:id', ApiController.getPhrase);
 router.put('/frases/:id', ApiController.updatePhrase);
 router.delete('/frases/:id', ApiController.deletePhrase);
 
+router.get('/frases/aleatoria', ApiController.randomPhrase);
+
 export default router;
