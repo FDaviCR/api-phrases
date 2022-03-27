@@ -10,10 +10,10 @@ router.get('/nome/:nome', ApiController.nome);
 
 router.post('/frases', ApiController.createPhrase);
 router.get('/frases', ApiController.listPhrases);
-router.get('/frases/:id', ApiController.getPhrase);
-router.put('/frases/:id', ApiController.updatePhrase);
-router.delete('/frases/:id', ApiController.deletePhrase);
+router.get('/frase/aleatoria', ApiController.randomPhrase);
+router.get('/frase/:id', ApiController.getPhrase);
+router.put('/frase/:id', ApiController.updatePhrase);
+router.delete('/frase/:id', ApiController.deletePhrase);
 
-router.get('/frases/aleatoria', ApiController.randomPhrase);
 
 export default router;
