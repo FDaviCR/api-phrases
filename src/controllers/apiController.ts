@@ -24,3 +24,9 @@ export const createPhrase = async (req: Request, res: Response) => {
     res.status(201);
     res.json({ id: newPhrase.id, author, txt });
 }
+
+export const listPhrases = async (req: Request, res: Response) => {
+    let list = await Phrase.findAll();
+
+    res.json({ list });
+}
